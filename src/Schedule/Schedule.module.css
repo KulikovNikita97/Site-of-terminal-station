@@ -1,10 +1,15 @@
 .title {
-    padding: 80px 0 50px 0;
+    width: 100%;
+    padding: 110px 0 50px 0;
     font-weight: bold;
     font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     
+}
+
+.tableSub {
+    padding: 0 180px 0 180px; 
 }
 
 .generalBody {
@@ -38,4 +43,13 @@
     display: flex;
     justify-content: center;
     padding: 0 0 16px 0;
+}
+
+
+
+@media (max-width: 1020px) {
+    .tableSub {
+        padding: 0;
+        width: 100%;
+    }
 }

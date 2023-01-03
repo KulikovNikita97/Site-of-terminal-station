@@ -9,7 +9,7 @@ const { TextArea } = Input;
 const Support = () => {
 
     const [sendRequest, setSendRequest] = useState(false);
-
+    
     return <div>
         {sendRequest
             ? <Result
@@ -23,7 +23,7 @@ const Support = () => {
                     <h1><b>Support service 365/7/24</b></h1>
                     <h2>Describe your problem or wish. You can attach photos or documents if you want.</h2>
                 </div>
-                <Form>
+                <Form className={s.textarea}>
                     <Form.Item style={{ display: 'flex', justifyContent: 'center' }}>
                         <TextArea rows={8} cols={100} />
                     </Form.Item>
@@ -41,7 +41,7 @@ const Support = () => {
                             </div>
                         </Upload>
                     </Form.Item>
-                    <Form.Item style={{ display: 'flex', justifyContent: 'center' }}>
+                    <Form.Item className={s.button}>
                         <Button type='primary' onClick={() => setSendRequest(true)}>
                             Send
                         </Button>

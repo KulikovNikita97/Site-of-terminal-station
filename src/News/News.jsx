@@ -3,29 +3,27 @@ import 'antd/dist/antd.css';
 import { Card } from 'antd';
 import Label from './label.jpg';
 import Map from './fullMap.jpg';
-import News1 from './News1'
+import News1 from './News1';
+import s from './News.module.css'
 
 const { Meta } = Card;
 
 const News = () => {
     return (
-        <div style={{ display: 'flex', justifyContent: 'space-evenly', padding: '60px 0 50px 0' }}>
+        <div className={s.general}>
 
-            <Card hoverable style={{ width: '400px', height: '100%' }} cover={<img alt="example" src={Label} />}>
+            <Card hoverable className={s.card} cover={<img alt="label of Equestrian Railways" src={Label} />}>
                 <Meta title="The history of the Equestrian Railways" description="The history of the Equestrian Railways begins back in 1879 with the invention of the steam engine. An earth pony named Steel Rowdens invented it for his cloth business, but his idea was taken up by others and rethought. In 1883, Pegasus Rampal Annoyd guessed to put such an engine on wheels. But the potholes of the Equestrian roads of that time did not allow such transport to reach high speeds. Then Rampal put it on metal rails, similar to those that were installed in the mines for the export of rock. The invention made a splash. Rampal founded Rampal Annoyed Spirit Ways and built a test road on his property. The cab, with a 30 horsepower engine, could move loads of up to 10,000 pounds on trolleys at a speed of 8 miles per hour. Within a year of the company's work, the speed and carrying capacity increased many times over. Rampal asked Her Highness to build a freight road from Canterlot to the foot of the mountain to help build Sunrise Stadium (now Canterlot Grand Stadium). The Highest Person granted his request and deigned to personally be present at the launch of the road. The merits of the new method of transporting goods impressed Her, and soon the Canterlot - Dodge City route was launched. This happened on August 18, 1886, and since then the founding of the Equestrian Railways has been celebrated on this day. Subsequently, the roads diverged from Canterlot along two winding lines from the mountain - in 1891 the road reached Mainhattan, in 1896 - to Phillydelphia, in 1904 - to Vanhoover, in 1916 - to Las Pegasus. The coverage density of suburban highways also increased. By 1950, all 20 cities in our country could be reached by rail, the travel time from the Moon to the Dragon Seas was reduced to two days (with a change in Canterlot). In 1952, the construction of the Great Canterlot Bypass was completed - now trains could bypass the capital without stopping at it. All this has accelerated the movement even more and now the fastest express train 'Dragon Moon' makes its way from Manehattan to Vanhoover through the Crystal Empire in just 30 hours." />
             </Card>
 
-            <Card hoverable style={{ width: '400px', height: '100%' }} cover={<img alt="example" src={Map} />}>
+            <Card hoverable className={s.card} cover={<img alt="Map of Equestria" src={Map} />}>
                 <Meta title="The history of Equestria (if you didn't know)" description='The history of Equestria began at the end of the "Age of Eternal Winter". Before founding Equestria, the three major pony types—Earth Ponies, Unicorns, and Pegasi—were separate tribes. This period is described as a chaotic time, when the horse-like windigos brought freezing temperatures and eternal darkness to the world, and other monsters terrorized the populace. The three tribes separately emigrated to the continent of Equus, where they began feuding with each other, which fueled the strength of the windigos. Eventually the tribes set aside their squabbles to unify as the nation of Equestria and defeat the windigos. The foundation of Equestria is celebrated during the annual Hearths Warming Day festival. Equestria initially struggled with the task of ensuring that the sun and moon set at the proper times, which drained the powers of Equestrias most powerful sorcerers. The birth of future princesses Celestia and Luna, alicorn sisters who could raise and lower the celestial bodies at will, ushered in an era of prosperity. The sisters were crowned as the rulers of Equestria, and were trained in the use of their powers by the legendary wizard Star Swirl the Bearded. Under Princess Celestia and Luna, Equestria was able to focus greater magic and resources on its development, despite the emergence of threats like the evil Lord Tirek, Discord, and wars between ponies and the Changeling Hive. Under the princesses, Equestria was transformed from a feudal kingdom into a superpower with an advanced economy. Six legendary ponies wielded the Elements of Harmony to defend Equestria from these threats, and planted the Tree of Harmony so other generations would be able to do the same. The status quo remained unchanged until the corruption of Princess Luna, who transformed into Nightmare Moon with the intent of plunging Equestria into eternal night. This culminated in the one thousand-year exile of Nightmare Moon, who later returned as Princess Luna. In Equestrias early history, the northern Crystal Empire was ruled by Princes Amore. Later the tyrannical King Sombra took over the kingdom, and enslaved the Crystal Ponies. After Sombra was defeated by Celestia and Luna with the magical Crystal Heart, he cursed the Crystal Empire to disappear, which it did for one thousand years. The Crystal Empire later reappeared, and was ruled by Princess Cadence and her husband Shining Armor.
                     By the end of Friendship is Magic, rule of Equestria passed down to Princess Twilight Sparkle. The reign of Twilight Sparkle brought about increases of peace, prosperity, hope and love, as Princess Twilight continued her scientific research and made her diplomatic mission to spread the friendship to every creature in need. Throughout Equestrias history, it remains distant but mostly friendly relations with the other nations like the Zebras and Yaks.
                     The period after the return of Princess Luna through the ascendancy of Twilight Sparkle is the era most detailed by the main comics, television series, and video games. It is therefore fully canonical, according to the show writers.' />
             </Card>
 
-
-
         </div>
     )
-
 };
 
 export default News;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 import { Link } from "react-router-dom";
 import { Button, Steps, Result } from 'antd';
-import s from './Schedule1q.module.css';
+import s from './Schedule.module.css';
 import First from './Steps/First';
 import Second from './Steps/Second';
 import Third from './Steps/Third';

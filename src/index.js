@@ -1,31 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import Support from './Support/Support';
-import News from './News/News';
-import Admin from './Admin/Admin';
-import Logging from './Admin/Logging';
-import Entering from './Admin/Entering';
-import Buying from './Admin/Buying';
-import Gender from './Admin/Gender';
-import FromWhere from './Admin/FromWhere';
-import ToWhere from './Admin/ToWhere';
-import SuburbianTrains from './Schedule/SuburbianTrains';
-import LongDistanceTrains from './Schedule/LongDistanceTrains';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import Support from "./Support/Support";
+import News from "./News/News";
+import Admin from "./Admin/Admin";
+import Logging from "./Admin/Logging";
+import Entering from "./Admin/Entering";
+import Buying from "./Admin/Buying";
+import Gender from "./Admin/Gender";
+import FromWhere from "./Admin/FromWhere";
+import ToWhere from "./Admin/ToWhere";
+import SuburbianTrains from "./Schedule/SuburbianTrains";
+import LongDistanceTrains from "./Schedule/LongDistanceTrains";
+import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+window.history.pushState(null, null, "/news");
 
-window.history.pushState(null, null, '/news');
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-        <Route path="support" element={<Support />} />
+          <Route path="support" element={<Support />} />
           <Route path="news" element={<News />} />
           <Route path="suburbian" element={<SuburbianTrains />} />
           <Route path="long_distance" element={<LongDistanceTrains />} />
