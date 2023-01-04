@@ -12,10 +12,9 @@
 @media (max-width: 800px) {
   .general {
     display: block;
-    padding-bottom: 20px;
+    padding: 140px 0 1px 0;
   }
   .card {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 30px auto;
   }
 }
